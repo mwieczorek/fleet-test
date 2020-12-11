@@ -6,3 +6,11 @@ targetCustomizations:
     clusterSelector:
       matchLabels:
         name: eks2
+
+  - name: prod
+    helm:
+      values:
+        version: nginx:1.17
+    clusterSelector:
+      matchLabels:
+        env: prod
