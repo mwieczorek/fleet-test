@@ -1,0 +1,8 @@
+targetCustomizations:
+  - name: eks2
+    helm:
+      values:
+        replicas: 2
+    clusterSelector:
+      matchLabels:
+        name: eks2
