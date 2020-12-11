@@ -10,7 +10,7 @@ targetCustomizations:
   - name: prod
     helm:
       values:
-        version: nginx:1.17
+        version: nginx:1.16
     clusterSelector:
       matchLabels:
         env: prod
