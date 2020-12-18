@@ -1,0 +1,16 @@
+targetCustomizations:
+  - name: eks2
+    helm:
+      values:
+        replicas: 2
+    clusterSelector:
+      matchLabels:
+        name: eks2
+
+  - name: prod
+    helm:
+      values:
+        version: nginx:1.16
+    clusterSelector:
+      matchLabels:
+        env: prod
