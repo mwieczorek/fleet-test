@@ -1,0 +1,4 @@
+creation_rules:
+- path_regex: templates/secret.yaml
+  encrypted_regex: "^(data|stringData)$"
+  kms: arn:aws:kms:eu-west-1:617007418524:key/20dbd3d0-7751-4607-8019-d71db8d0138e
