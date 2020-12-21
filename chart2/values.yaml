@@ -1,2 +1,2 @@
-replicas: 1
+replicas: 4
 version: nginx:1.19
