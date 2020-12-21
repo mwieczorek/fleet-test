@@ -7,10 +7,10 @@ targetCustomizations:
       matchLabels:
         name: eks2
 
-  - name: prod
+  - name: domain
     helm:
       values:
-        version: nginx:1.16
+        version: nginx:1.15
     clusterSelector:
       matchLabels:
-        env: prod
+        domain: acc
